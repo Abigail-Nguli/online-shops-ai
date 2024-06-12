@@ -13,10 +13,15 @@ function getshop(event) {
   let apiKey = "fa483db98dc0o4b7fc5fdbea841a31ta";
   let searchInput = document.querySelector("#search-input");
   let prompt = `Provide the best online shopping platform for: ${searchInput.value}`;
+
+  let platformServices = `The results should be displayed in html format and include a <div class="site-name">title of an existing shopping platform</div>, 
+  then a brief explanation about the platform and its services and products(NOT exceed 3 lines and be separated by <br>)`;
+
   let shoppingPlatform = `<div class="site-link">👉<a>Visit (title of the shopping platform) NOW(this should be active link to the shopping platform)</a>👈</div>, 
   last line: <div class="sign-off"> ❤️Happy Shopping❤️</div>`;
-  let context = `Generate ONLY ONE online shopping platform that you think is the best. The results should be displayed in html format and include a <div class="site-name">title of an existing shopping platform</div>, 
-  then a brief explanation about the platform and its services and products(NOT exceed 3 lines and be separated by <br>),
+
+  let context = `Generate ONLY ONE online shopping platform that you think is the best,
+  ${platformServices}
   ${shoppingPlatform}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   let shop = document.querySelector("#shop");
