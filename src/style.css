@@ -131,3 +131,7 @@ footer a:hover {
   font-size: 18px;
   opacity: 0.6;
 }
+
+.site-link a:hover{
+  color: #114e52;
+}
