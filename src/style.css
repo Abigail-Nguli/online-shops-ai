@@ -1,0 +1,133 @@
+body {
+  background: linear-gradient(to right, #dfe9f3 0%, white 100%);
+}
+
+h1 {
+  text-align: center;
+  color: #3b2603;
+}
+
+input {
+  padding: 15px;
+  font-size: 16px;
+}
+
+form input:first-child {
+  width: 75%;
+  border-radius: 10px;
+}
+
+form input:nth-child(2) {
+  border-radius: 6px;
+  background-color: #114e52;
+  color: #fff;
+  margin-left: 8px;
+}
+
+form input:nth-child(2):hover {
+  opacity: 0.8;
+  
+}
+
+footer {
+  text-align: center;
+  font-size: 21px;
+  padding: 8px;
+  color: #114e52;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #114e52;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+.container {
+  margin: 25px auto 15px auto;
+  max-width: 710px;
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  padding: 20px 60px 50px 60px;
+  border-radius: 8px;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+    0 5px 14px 0 rgba(0, 0, 0, 0.18);
+}
+
+.form-container {
+  margin: 30px 0;
+  background: linear-gradient(to left, #dfe9f3 0%, rgb(159, 201, 204) 100%);
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+    0 5px 14px 0 rgba(0, 0, 0, 0.18);
+}
+
+.example {
+  font-style: italic;
+  opacity: 0.6;
+  margin-top: 12px;
+  font-size: 15px;
+  color: #352202;
+}
+
+.shop {
+  background: linear-gradient(to right, #dfe9f3 0%, rgb(159, 201, 204) 100%);
+  padding: 8px;
+  border-radius: 10px;
+  border-left: 4px solid #114e52;
+  font-size: 18px;
+  line-height: 2.5;
+  color: #3b2603;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+    0 5px 14px 0 rgba(0, 0, 0, 0.18);
+}
+
+.shop strong {
+  color: #744b05;
+  font-weight: bold;
+  padding: 8px auto;
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.generating {
+  animation: blinker 2s linear infinite;
+}
+
+.sign-off{
+  text-align: center;
+  opacity: 0.7;
+  font-size: 12px;
+  font-family: cursive;
+}
+
+.site-name{
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.site-link{
+  text-align: center;
+}
+
+.site-link a{
+  text-decoration: none;
+  color: #352202;
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 0.6;
+}
