@@ -15,7 +15,7 @@ function getshop(event) {
   let prompt = `Provide the best online shopping platform for: ${searchInput.value}`;
   let context = `Generate ONLY ONE online shopping platform that you think is the best. The results should be displayed in html format and include a <div class="site-name">title of an existing shopping platform</div>, 
   then a brief explanation about the platform and its services and products(NOT exceed 3 lines and be separated by <br>),
-  <div class="site-link">👉<a>Visit [title of the shopping platform] NOW(this should be active link to the shopping platform)</a>👈</div>, 
+  <div class="site-link">👉<a>Visit (title of the shopping platform) NOW(this should be active link to the shopping platform)</a>👈</div>, 
   last line: <div class="sign-off"> ❤️Happy Shopping❤️</div>`;
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
