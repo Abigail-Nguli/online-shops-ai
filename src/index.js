@@ -1,5 +1,4 @@
 function displayshop(response) {
-
   new Typewriter("#shop", {
     strings: response.data.answer,
     autoStart: true,
@@ -15,15 +14,10 @@ function getshop(event) {
   let searchInput = document.querySelector("#search-input");
   let prompt = `Suggest an online shopping platform for: ${searchInput.value}`;
 
-  let siteName = ` <div class="site-name">title of an existing shopping platform</div>`;
-  let platformServices = `The results should be in html format with ${siteName} and a brief explanation about the platform, its services or products (the explanation NOT exceed 5 lines and be separated by <br>)`;
+  let siteName = `<div class="site-name">(Title goes here) </div>`;
+  let siteLink = `<div class="site-link">Visit ${siteName}👉<a>NOW (link goes here)</a>👈</div>`;
 
-  let siteLink = `<div class="site-link">Visit (title of the shopping platform)👉<a>NOW (link to the shopping platform)</a>👈</div>`;
-  let shoppingPlatform = `${siteLink} and the last line: <div class="sign-off"> ❤️Happy Shopping❤️</div>`;
-
-  let context = `Generate ONLY the best online shopping platform,
-  ${platformServices}
-  ${shoppingPlatform}`;
+  let context = `Get the best existing online shopping platform displaying the title as ${siteName}, brief description of the platform, link to the platform in a single line as ${siteLink} and last line should be signed with <div class="sign-off"> ❤️Happy Shopping❤️</div>}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   let shop = document.querySelector("#shop");
   shop.classList.remove("hidden");
