@@ -135,3 +135,28 @@ footer a:hover {
 .site-link a:hover{
   color: #114e52;
 }
+
+/*Small Screen*/
+@media (max-width: 477px) {
+
+  h1{
+    font-size: 25px;
+  }
+
+  .container{
+    padding: 30px;
+  }
+
+  input::placeholder{
+    font-size: 13px;
+  }
+  
+  #search-input{
+    width: 165px;
+  }
+
+  footer{
+    font-size: 14px;
+  }
+
+}

@@ -15,7 +15,7 @@ function getshop(event) {
   let prompt = `Provide the best online shopping platform for: ${searchInput.value}`;
 
   let platformServices = `The results should be displayed in html format and include: <div class="site-name">title of an existing shopping platform</div>, 
-  then a brief explanation about the platform and its services and products(the explanation NOT exceed 8 lines and be separated by <br>)`;
+  then a brief explanation about the platform and its services or products(the explanation NOT exceed 5 lines and be separated by <br>)`;
 
   let shoppingPlatform = `<div class="site-link">👉<a>Visit (title of the shopping platform) NOW(this should be active link to the shopping platform)</a>👈</div>, 
   last line: <div class="sign-off"> ❤️Happy Shopping❤️</div>`;
