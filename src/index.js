@@ -15,9 +15,9 @@ function getshop(event) {
   let prompt = `Suggest an online shopping platform for: ${searchInput.value}`;
 
   let siteName = `<div class="site-name">(Title goes here) </div>`;
-  let siteLink = `<a><div class="site-link">Visit Us</div></a>`;
+  let siteLink = `<a class="site-link">Visit Us(this text should be an active link to the platform)</a>`;
 
-  let context = `Get the best existing online shopping platform displaying the title as ${siteName}, brief description of the platform, link to the platform in a single line as ${siteLink} and last line should be signed with <div class="sign-off"> ❤️Happy Shopping❤️</div>}`;
+  let context = `Suggest an existing online shopping platform displaying the title as ${siteName}, description of the platform, its services and products(not more than 6 lines), link to the platform as ${siteLink} and last line should be signed with <div class="sign-off"> ❤️Happy Shopping❤️</div>}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   let shop = document.querySelector("#shop");
   shop.classList.remove("hidden");

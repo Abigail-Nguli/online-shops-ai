@@ -121,26 +121,16 @@ footer a:hover {
 }
 
 .site-link{
-  background: #114e52;
+  text-decoration: none;
+  color: #3b2603;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
   text-align: center;
-  padding: 8px;
-  border-radius: 6px;
 }
 
 .site-link:hover{
   opacity: 0.8;
-}
-
-.site-link a{
-  text-decoration: none;
-  color: #352202;
-  font-weight: bold;
-  font-size: 16px;
-  opacity: 0.6;
-}
-
-.site-link a:hover{
-  color: #114e52;
 }
 
 /*Small Screen*/
