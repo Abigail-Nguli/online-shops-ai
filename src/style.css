@@ -121,7 +121,10 @@ footer a:hover {
 }
 
 .site-link{
+  background: #114e52;
   text-align: center;
+  padding: 8px;
+  border-radius: 6px;
 }
 
 .site-link a{
