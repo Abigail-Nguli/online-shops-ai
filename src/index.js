@@ -1,4 +1,5 @@
 function displayshop(response) {
+
   new Typewriter("#shop", {
     strings: response.data.answer,
     autoStart: true,
@@ -10,17 +11,17 @@ function displayshop(response) {
 function getshop(event) {
   event.preventDefault();
 
-  let apiKey = "fa483db98dc0o4b7fc5fdbea841a31ta"; // Ensure this is correct
+  let apiKey = "fa483db98dc0o4b7fc5fdbea841a31ta";
   let searchInput = document.querySelector("#search-input");
   let prompt = `Suggest an online shopping platform for: ${searchInput.value}`;
 
-  let platformServices = `The results should be in html format with: <div class="site-name">title of an existing shopping platform</div>, 
-  then a brief explanation about the platform and its services or products (the explanation NOT exceed 5 lines and be separated by <br>)`;
+  let siteName = ` <div class="site-name">title of an existing shopping platform</div>`;
+  let platformServices = `The results should be in html format with ${siteName} and a brief explanation about the platform, its services or products (the explanation NOT exceed 5 lines and be separated by <br>)`;
 
-  let shoppingPlatform = `<div class="site-link">👉<a>Visit (title of the shopping platform) NOW (this should be active link to the shopping platform)</a>👈</div>, 
-  last line: <div class="sign-off"> ❤️Happy Shopping❤️</div>`;
+  let siteLink = `<div class="site-link">Visit (title of the shopping platform)👉<a>NOW (link to the shopping platform)</a>👈</div>`;
+  let shoppingPlatform = `${siteLink} and the last line: <div class="sign-off"> ❤️Happy Shopping❤️</div>`;
 
-  let context = `Generate ONLY ONE online shopping platform that you think is the best,
+  let context = `Generate ONLY the best online shopping platform,
   ${platformServices}
   ${shoppingPlatform}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
