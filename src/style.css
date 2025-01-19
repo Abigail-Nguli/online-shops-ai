@@ -127,11 +127,15 @@ footer a:hover {
   border-radius: 6px;
 }
 
+.site-link:hover{
+  opacity: 0.8;
+}
+
 .site-link a{
   text-decoration: none;
   color: #352202;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   opacity: 0.6;
 }
 
